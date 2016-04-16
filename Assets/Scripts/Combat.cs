@@ -45,5 +45,14 @@ public class Combat : MonoBehaviour
     {
 
     }
+
+
+    public void Fight()
+    { 
+        
+    }
+
+
+
 }
 

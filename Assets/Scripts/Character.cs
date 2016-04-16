@@ -14,6 +14,7 @@ public class Character : MonoBehaviour {
     public int experience;
 
     public int healthPoints;
+    public int healthPointsMax;
 
     public int strength;
     public int dexterity;
@@ -51,7 +52,7 @@ public class Character : MonoBehaviour {
 
     public void RecalcAttributes()
     {
-        healthPoints = constitution * 2 + endurance;
+        healthPointsMax = constitution * 2 + endurance;
 
         attack = dexterity/2+strength/4+intelligence/4;
         defense = dexterity/2+endurance/4+perception/4;
