@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 using ELEMENTS = ENUMS.ELEMENTS;
@@ -20,13 +21,10 @@ public class Character : MonoBehaviour {
     public int endurance;
     public int perception;
     public int intelligence;
-
-
-
+    
     public int attack;
     public int defense;
-    
-    
+        
     public int block;
     public int blockFire;
     public int blockWater;
@@ -34,8 +32,9 @@ public class Character : MonoBehaviour {
     public int blockAir;
 
     public int amountAttacks;
-    
-    
+    public List<FORMS> availableForms;
+    public List<FORMS> predefinedAttackSequence;
+
 	// Use this for initialization
 	void Start () 
     {
@@ -63,6 +62,17 @@ public class Character : MonoBehaviour {
         blockAir = intelligence/2 +perception/2+dexterity/4;
 
         amountAttacks = endurance/3;
+    }
+
+
+
+    public void createRandomAttackSequence()
+    { 
+        predefinedAttackSequence.Clear();
+        for(int i = 0;i<amountAttacks;i++)
+        {
+            predefinedAttackSequence.Add(availableForms[Random.Range(0, availableForms.Count)]);
+        }
     }
 
 }
