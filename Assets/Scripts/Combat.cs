@@ -8,11 +8,10 @@ public class Combat : MonoBehaviour
     public Character enemyCharacter;
 
 
-
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
