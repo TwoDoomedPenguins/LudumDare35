@@ -66,13 +66,14 @@ public class Character : MonoBehaviour {
 
 
 
-    public void createRandomAttackSequence()
+    public List<FORMS> createRandomAttackSequence()
     { 
-        predefinedAttackSequence.Clear();
+        List<FORMS> attackList = new List<FORMS>();
         for(int i = 0;i<amountAttacks;i++)
         {
-            predefinedAttackSequence.Add(availableForms[Random.Range(0, availableForms.Count)]);
+            attackList.Add(availableForms[Random.Range(0, availableForms.Count)]);
         }
+        return attackList;
     }
 
 }
