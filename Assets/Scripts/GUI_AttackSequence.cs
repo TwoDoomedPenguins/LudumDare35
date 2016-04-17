@@ -14,7 +14,7 @@ public class GUI_AttackSequence : MonoBehaviour
     public ENTITY entity;
     public List<FORMS> forms;
     public List<Sprite> formSprites;
-    
+
 
     public Dictionary<FORMS, Sprite> formAndSprites = new Dictionary<FORMS, Sprite>();
 
@@ -30,8 +30,8 @@ public class GUI_AttackSequence : MonoBehaviour
     public void RefreshSequenceSprites()
     {
         for (int i = 0; i < attackSequence.Count; i++)
-        { 
-            if (i<combat.attackSequence[entity].Count)
+        {
+            if (i < combat.attackSequence[entity].Count)
             {
                 attackSequence[i].SetActive(true);
                 attackSequence[i].GetComponent<Image>().sprite = formAndSprites[combat.attackSequence[entity][i]];
@@ -40,8 +40,14 @@ public class GUI_AttackSequence : MonoBehaviour
             {
                 attackSequence[i].SetActive(false);
             }
-            
+
         }
+    }
+
+    public void ResetSequenceSprites()
+    {
+        for (int i = 0; i < attackSequence.Count; i++)
+        { attackSequence[i].SetActive(false); }
     }
 
     // Update is called once per frame

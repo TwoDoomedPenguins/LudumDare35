@@ -27,7 +27,22 @@ public class HealthBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.GetComponent<Slider>().maxValue = character.healthPointsMax;
-        this.GetComponent<Slider>().value = character.healthPoints;
+        if (character == null)
+        {
+            this.GetComponent<Slider>().value = 0;
+            if (entity == ENTITY.Enemy)
+            {
+                character = combat.enemyCharacter;
+            }
+            else
+            {
+                character = combat.playerCharacter;
+            }
+        }
+        if (character != null)
+        {
+            this.GetComponent<Slider>().maxValue = character.healthPointsMax;
+            this.GetComponent<Slider>().value = character.healthPoints;
+        }
     }
 }

@@ -10,6 +10,7 @@ using COMBATSTATUS = ENUMS.COMBATSTATUS;
 public class Combat : MonoBehaviour
 {
     public Character playerCharacter;
+    public GameObject enemyObject;
     public Character enemyCharacter;
 
     public GUI_AttackSequence GUIAttackPlayer;
@@ -20,12 +21,23 @@ public class Combat : MonoBehaviour
     public DamageTextIndicator WinLooseText;
 
     public Dictionary<ENTITY, List<FORMS>> attackSequence = new Dictionary<ENTITY, List<FORMS>>();
+    public Dungeon dungeon;
 
     public COMBATSTATUS combatStatus = COMBATSTATUS.Progress;
+    bool isFightInProgress = false;
 
     // Use this for initialization
     void Start()
     {
+
+
+
+    }
+
+    public void StartNewFight()
+    {
+        enemyCharacter = enemyObject.GetComponent<Character>();
+        attackSequence.Clear();
 
         if (enemyCharacter.predefinedAttackSequence.Count > 0)
         { attackSequence.Add(ENTITY.Enemy, enemyCharacter.predefinedAttackSequence); }
@@ -38,16 +50,19 @@ public class Combat : MonoBehaviour
 
         GUIAttackPlayer.RefreshSequenceSprites();
         GUIAttackEnemy.RefreshSequenceSprites();
-
+        combatStatus = COMBATSTATUS.Progress;
     }
 
 
     public void AddAttackToPlayerSequence(FORMS form)
     {
-        if (attackSequence[ENTITY.Player].Count < playerCharacter.amountAttacks)
+        if (!isFightInProgress && combatStatus == COMBATSTATUS.Progress)
         {
-            attackSequence[ENTITY.Player].Add(form);
-            GUIAttackPlayer.RefreshSequenceSprites();
+            if (attackSequence[ENTITY.Player].Count < playerCharacter.amountAttacks)
+            {
+                attackSequence[ENTITY.Player].Add(form);
+                GUIAttackPlayer.RefreshSequenceSprites();
+            }
         }
     }
 
@@ -60,7 +75,8 @@ public class Combat : MonoBehaviour
 
     public void Fight()
     {
-        if (combatStatus == COMBATSTATUS.Progress)
+
+        if (!isFightInProgress && combatStatus == COMBATSTATUS.Progress)
         {
             StartCoroutine(FightProceed());
         }
@@ -68,6 +84,7 @@ public class Combat : MonoBehaviour
 
     IEnumerator FightProceed()
     {
+        isFightInProgress = true;
         if (combatStatus == COMBATSTATUS.Progress)
         {
             int rounds = 0;
@@ -122,7 +139,7 @@ public class Combat : MonoBehaviour
                     else
                     { if (attackForm != FORMS.NOTHING) damageTextPlayer.NewDamageText(CalculateFight(enemyCharacter, attackForm, playerCharacter, defendForm)); }
                 }
-                yield return new WaitForSeconds(3.0f);
+
                 if (playerCharacter.healthPoints <= 0)
                 {
                     WinLooseText.NewDamageText("You Loose");
@@ -133,13 +150,20 @@ public class Combat : MonoBehaviour
                 {
                     WinLooseText.NewDamageText("You Win");
                     combatStatus = COMBATSTATUS.Win;
+                    DestroyImmediate(enemyObject);
+                    enemyObject = null;
+                    enemyCharacter = null;
+                    GUIAttackEnemy.ResetSequenceSprites();
+
                     break;
                 }
+                yield return new WaitForSeconds(1.5f);
 
             }
         }
         attackSequence[ENTITY.Player].Clear();
         GUIAttackPlayer.RefreshSequenceSprites();
+        isFightInProgress = false;
     }
 
 
