@@ -21,8 +21,7 @@ public class Dungeon : MonoBehaviour
     public Color colorCurrent;
     public Color colorNext;
 
-    public AudioClip musicLoose;
-    public AudioClip musicWon;
+
 
     // Use this for initialization
     void Start()

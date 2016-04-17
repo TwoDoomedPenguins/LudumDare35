@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6143c9642d8d455408e9ade816a2968e
-timeCreated: 1460826941
+timeCreated: 1460928685
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,8 +8,8 @@ TextureImporter:
     21300002: RandomMove
     21300004: UnknownMove
     21300006: HealthPosion
-    21300008: Items_4
-    21300010: Items_5
+    21300008: Music
+    21300010: Sound
     21300012: Items_6
     21300014: Items_7
     21300016: Items_8
@@ -136,7 +136,7 @@ TextureImporter:
         - {x: 16, y: -14}
         - {x: 16, y: 14}
         - {x: 14, y: 16}
-    - name: Items_4
+    - name: Music
       rect:
         serializedVersion: 2
         x: 128
@@ -144,7 +144,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}
@@ -155,7 +155,7 @@ TextureImporter:
         - {x: 16, y: -14}
         - {x: 16, y: 14}
         - {x: 14, y: 16}
-    - name: Items_5
+    - name: Sound
       rect:
         serializedVersion: 2
         x: 0
@@ -163,7 +163,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}
@@ -182,7 +182,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}
@@ -201,7 +201,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}
@@ -220,7 +220,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}
@@ -239,7 +239,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: -14, y: 16}

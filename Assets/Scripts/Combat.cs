@@ -26,16 +26,18 @@ public class Combat : MonoBehaviour
     public COMBATSTATUS combatStatus = COMBATSTATUS.Progress;
     bool isFightInProgress = false;
 
-    AudioSource audioSource;
+    public AudioSource audioSourceMusic;
+    public AudioSource audioSourceEffect;
+
     public AudioClip musicIdle;
     public AudioClip musicLoose;
     public AudioClip musicWon;
 
+    public List<AudioClip> soundsAttack;
+
     // Use this for initialization
     void Start()
     {
-        audioSource = this.GetComponent<AudioSource>();
-
 
     }
 
@@ -51,8 +53,9 @@ public class Combat : MonoBehaviour
 
         if (enemyCharacter.battleMusic != null)
         {
-            audioSource.clip = enemyCharacter.battleMusic;
-            audioSource.Play();
+            Debug.Log(enemyCharacter.battleMusic.name);
+            audioSourceMusic.clip = enemyCharacter.battleMusic;
+            audioSourceMusic.Play();
         }
         enemyCharacter.healthPoints = enemyCharacter.healthPointsMax;
 
@@ -150,15 +153,17 @@ public class Combat : MonoBehaviour
                     { if (attackForm != FORMS.NOTHING) damageTextPlayer.NewDamageText(CalculateFight(enemyCharacter, attackForm, playerCharacter, defendForm)); }
                 }
 
+                audioSourceEffect.clip = soundsAttack[Random.Range(0, soundsAttack.Count - 1)];
+                audioSourceEffect.Play();
+                
                 if (playerCharacter.healthPoints <= 0)
                 {
                     WinLooseText.NewDamageText("You Loose");
                     combatStatus = COMBATSTATUS.Loose;
-                    audioSource.clip = musicLoose;
-                    audioSource.Play();
-                    yield return new WaitForSeconds(audioSource.clip.length);
-                    audioSource.clip = musicIdle;
-                    audioSource.Play();
+                    audioSourceEffect.clip = musicLoose;
+                    audioSourceEffect.Play();
+                    audioSourceMusic.clip = musicIdle;
+                    audioSourceMusic.Play();
                     break;
                 }
                 else if (enemyCharacter.healthPoints <= 0)
@@ -169,11 +174,10 @@ public class Combat : MonoBehaviour
                     enemyObject = null;
                     enemyCharacter = null;
                     GUIAttackEnemy.ResetSequenceSprites();
-                    audioSource.clip = musicWon;
-                    audioSource.Play();
-                    yield return new WaitForSeconds(audioSource.clip.length);
-                    audioSource.clip = musicIdle;
-                    audioSource.Play();
+                    audioSourceEffect.clip = musicWon;
+                    audioSourceEffect.Play();
+                    audioSourceMusic.clip = musicIdle;
+                    audioSourceMusic.Play();
                     break;
                 }
                 yield return new WaitForSeconds(1.5f);
@@ -331,4 +335,5 @@ public class Combat : MonoBehaviour
 
 
 }
+
 
