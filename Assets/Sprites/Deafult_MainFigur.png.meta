@@ -1,9 +1,12 @@
 fileFormatVersion: 2
 guid: 2fea4c32b0957a94b854f4098b71df21
-timeCreated: 1460811865
+timeCreated: 1460904843
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Deafult_MainFigur_0
+    21300002: Deafult_MainFigur_1
+    21300004: Deafult_MainFigur_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,27 +32,82 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Deafult_MainFigur_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3, y: 14}
+        - {x: -4, y: 14}
+        - {x: -9, y: 5}
+        - {x: -9, y: -14}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -14}
+        - {x: 10, y: -2}
+        - {x: 8, y: 11}
+    - name: Deafult_MainFigur_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 13}
+        - {x: -5, y: 13}
+        - {x: -9, y: 4}
+        - {x: -9, y: -15}
+        - {x: -8, y: -16}
+        - {x: 7, y: -16}
+        - {x: 10, y: -14}
+        - {x: 10, y: -3}
+        - {x: 9, y: 11}
+    - name: Deafult_MainFigur_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -16}
+        - {x: 14, y: -13}
+        - {x: -13, y: -13}
+        - {x: -14, y: -16}
     outline: []
   spritePackingTag: 
   userData: 

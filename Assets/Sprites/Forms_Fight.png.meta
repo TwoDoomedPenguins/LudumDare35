@@ -1,9 +1,19 @@
 fileFormatVersion: 2
 guid: 35a6711f5416c43498385b80663c57b8
-timeCreated: 1460894381
+timeCreated: 1460911306
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Square
+    21300002: TriangleUp
+    21300004: TriangleDown
+    21300006: Circle
+    21300008: Trapeze
+    21300010: Diamond
+    21300012: Pentagon
+    21300014: Hexagon
+    21300016: Star
+    21300018: Cross
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,27 +39,214 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Square
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 32}
+        - {x: -32, y: 29}
+        - {x: -32, y: -29}
+        - {x: -29, y: -32}
+        - {x: 29, y: -32}
+        - {x: 32, y: -29}
+        - {x: 32, y: 29}
+        - {x: 29, y: 32}
+    - name: TriangleUp
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 32}
+        - {x: -32, y: -15}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: -19}
+        - {x: 10, y: 32}
+    - name: TriangleDown
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 32}
+        - {x: -32, y: 19}
+        - {x: -10, y: -32}
+        - {x: 6, y: -32}
+        - {x: 32, y: 17}
+        - {x: 32, y: 30}
+        - {x: 31, y: 32}
+    - name: Circle
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 32}
+        - {x: -15, y: 32}
+        - {x: -22, y: 30}
+        - {x: -32, y: 16}
+        - {x: -32, y: -20}
+        - {x: -22, y: -32}
+        - {x: 20, y: -32}
+        - {x: 23, y: -31}
+        - {x: 32, y: -18}
+        - {x: 32, y: 18}
+        - {x: 31, y: 23}
+    - name: Trapeze
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 32}
+        - {x: -20, y: 32}
+        - {x: -23, y: 23}
+        - {x: -32, y: -16}
+        - {x: -32, y: -31}
+        - {x: -30, y: -32}
+        - {x: 31, y: -32}
+        - {x: 32, y: -30}
+        - {x: 32, y: 17}
+        - {x: 31, y: 28}
+    - name: Diamond
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6, y: 32}
+        - {x: -20, y: 4}
+        - {x: -20, y: -1}
+        - {x: -7, y: -32}
+        - {x: 6, y: -32}
+        - {x: 20, y: -1}
+        - {x: 20, y: 5}
+        - {x: 4, y: 32}
+    - name: Pentagon
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -12, y: 32}
+        - {x: -32, y: 9}
+        - {x: -32, y: -29}
+        - {x: -29, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 17}
+        - {x: 8, y: 32}
+    - name: Hexagon
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 32}
+        - {x: -21, y: 23}
+        - {x: -32, y: 9}
+        - {x: -32, y: -11}
+        - {x: -5, y: -32}
+        - {x: 4, y: -32}
+        - {x: 32, y: -9}
+        - {x: 32, y: 11}
+        - {x: 10, y: 32}
+    - name: Star
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 32}
+        - {x: -32, y: 20}
+        - {x: -32, y: -32}
+        - {x: 32, y: -32}
+        - {x: 32, y: 23}
+        - {x: 10, y: 32}
+    - name: Cross
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -29, y: 29}
+        - {x: -29, y: -27}
+        - {x: -27, y: -29}
+        - {x: 29, y: -29}
+        - {x: 29, y: 29}
     outline: []
   spritePackingTag: 
   userData: 

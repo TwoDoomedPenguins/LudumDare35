@@ -62,6 +62,14 @@ public class Combat : MonoBehaviour
     {
         if (combatStatus == COMBATSTATUS.Progress)
         {
+            StartCoroutine(FightProceed());
+        }
+    }
+
+    IEnumerator FightProceed()
+    {
+        if (combatStatus == COMBATSTATUS.Progress)
+        {
             int rounds = 0;
             if (attackSequence[ENTITY.Enemy].Count > attackSequence[ENTITY.Player].Count)
             { rounds = attackSequence[ENTITY.Enemy].Count; }
@@ -113,22 +121,19 @@ public class Combat : MonoBehaviour
                     { if (attackForm != FORMS.NOTHING) damageTextEnemy.NewDamageText(CalculateFight(playerCharacter, attackForm, enemyCharacter, defendForm)); }
                     else
                     { if (attackForm != FORMS.NOTHING) damageTextPlayer.NewDamageText(CalculateFight(enemyCharacter, attackForm, playerCharacter, defendForm)); }
-
-                    if (playerCharacter.healthPoints <= 0)
-                    {
-                        WinLooseText.NewDamageText("You Loose");
-                        combatStatus = COMBATSTATUS.Loose;
-                        break;
-                    }
-                    else if (enemyCharacter.healthPoints <= 0)
-                    {
-                        WinLooseText.NewDamageText("You Win");
-                        combatStatus = COMBATSTATUS.Win;
-                        break;
-                    }
-
-
-
+                }
+                yield return new WaitForSeconds(3.0f);
+                if (playerCharacter.healthPoints <= 0)
+                {
+                    WinLooseText.NewDamageText("You Loose");
+                    combatStatus = COMBATSTATUS.Loose;
+                    break;
+                }
+                else if (enemyCharacter.healthPoints <= 0)
+                {
+                    WinLooseText.NewDamageText("You Win");
+                    combatStatus = COMBATSTATUS.Win;
+                    break;
                 }
 
             }
@@ -163,33 +168,33 @@ public class Combat : MonoBehaviour
 
             case FORMS.TriangleDown: //Leichter Angriff
                 attack += 80;
-                damage += 10;
+                damage += 5;
                 break;
             case FORMS.TriangleUp: //Schwerer Angriff
                 attack += 50;
-                damage += 20;
+                damage += 10;
                 break;
 
 
             case FORMS.Circle: //Wasser
                 attackType = ELEMENTS.Water;
                 attack += 60;
-                damageMagic += 12;
+                damageMagic += 6;
                 break;
             case FORMS.Hexagon: //Feuer
                 attackType = ELEMENTS.Fire;
                 attack += 50;
-                damageMagic += 15;
+                damageMagic += 8;
                 break;
             case FORMS.Pentagon: //Erde
                 attackType = ELEMENTS.Earth;
                 attack += 60;
-                damageMagic += 10;
+                damageMagic += 5;
                 break;
             case FORMS.Star: //Luft
                 attackType = ELEMENTS.Air;
                 attack += 80;
-                damageMagic += 10;
+                damageMagic += 5;
                 break;
 
         }
