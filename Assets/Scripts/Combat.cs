@@ -26,10 +26,15 @@ public class Combat : MonoBehaviour
     public COMBATSTATUS combatStatus = COMBATSTATUS.Progress;
     bool isFightInProgress = false;
 
+    AudioSource audioSource;
+    public AudioClip musicIdle;
+    public AudioClip musicLoose;
+    public AudioClip musicWon;
+
     // Use this for initialization
     void Start()
     {
-
+        audioSource = this.GetComponent<AudioSource>();
 
 
     }
@@ -44,6 +49,11 @@ public class Combat : MonoBehaviour
         else
         { attackSequence.Add(ENTITY.Enemy, enemyCharacter.createRandomAttackSequence()); }
 
+        if (enemyCharacter.battleMusic != null)
+        {
+            audioSource.clip = enemyCharacter.battleMusic;
+            audioSource.Play();
+        }
         enemyCharacter.healthPoints = enemyCharacter.healthPointsMax;
 
         attackSequence.Add(ENTITY.Player, new List<FORMS>());
@@ -144,6 +154,11 @@ public class Combat : MonoBehaviour
                 {
                     WinLooseText.NewDamageText("You Loose");
                     combatStatus = COMBATSTATUS.Loose;
+                    audioSource.clip = musicLoose;
+                    audioSource.Play();
+                    yield return new WaitForSeconds(audioSource.clip.length);
+                    audioSource.clip = musicIdle;
+                    audioSource.Play();
                     break;
                 }
                 else if (enemyCharacter.healthPoints <= 0)
@@ -154,7 +169,11 @@ public class Combat : MonoBehaviour
                     enemyObject = null;
                     enemyCharacter = null;
                     GUIAttackEnemy.ResetSequenceSprites();
-
+                    audioSource.clip = musicWon;
+                    audioSource.Play();
+                    yield return new WaitForSeconds(audioSource.clip.length);
+                    audioSource.clip = musicIdle;
+                    audioSource.Play();
                     break;
                 }
                 yield return new WaitForSeconds(1.5f);

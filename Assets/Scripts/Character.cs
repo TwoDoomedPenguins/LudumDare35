@@ -37,6 +37,7 @@ public class Character : MonoBehaviour {
     public int amountAttacks;
     public List<FORMS> availableForms;
     public List<FORMS> predefinedAttackSequence;
+    public AudioClip battleMusic;
 
 	// Use this for initialization
 	void Start () 
