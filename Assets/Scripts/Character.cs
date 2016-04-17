@@ -24,6 +24,8 @@ public class Character : MonoBehaviour {
     public int intelligence;
     
     public int attack;
+    public int damage;
+    public int damageMagic;
     public int defense;
         
     public int block;
@@ -55,6 +57,10 @@ public class Character : MonoBehaviour {
         healthPointsMax = constitution * 2 + endurance;
 
         attack = dexterity/2+strength/4+intelligence/4;
+        
+        damage = strength / 2 + dexterity / 4;
+        damageMagic = intelligence / 2 + perception / 4;
+
         defense = dexterity/2+endurance/4+perception/4;
         block = constitution/2+endurance/2+strength/4;
         blockFire = intelligence/2 +perception/2+constitution/4;
