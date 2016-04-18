@@ -7,7 +7,8 @@ using ELEMENTS = ENUMS.ELEMENTS;
 using FORMS = ENUMS.FORMS;
 using ATTRIBUTES = ENUMS.ATTRIBUTES;
 
-public class Character : MonoBehaviour {
+public class Character : MonoBehaviour
+{
 
     public string charName;
 
@@ -24,12 +25,12 @@ public class Character : MonoBehaviour {
     public int endurance;
     public int perception;
     public int intelligence;
-    
+
     public int attack;
     public int damage;
     public int damageMagic;
     public int defense;
-        
+
     public int block;
     public int blockFire;
     public int blockWater;
@@ -46,28 +47,29 @@ public class Character : MonoBehaviour {
     //SpriteRenderer spriteRenderer;
     //Sprite standardSprite;
 
-    public void AddAttribute(ATTRIBUTES attribute)
+    public void AddAttribute(string attribute)
     {
+        
         if (freeAttributes > 0)
         {
             switch (attribute)
             {
-                case ATTRIBUTES.Constitution:
+                case "Constitution":
                     constitution++;
                     break;
-                case ATTRIBUTES.Dexterity:
+                case "Dexterity":
                     dexterity++;
                     break;
-                case ATTRIBUTES.Endurance:
+                case "Endurance":
                     endurance++;
                     break;
-                case ATTRIBUTES.Intelligence:
+                case "Intelligence":
                     intelligence++;
                     break;
-                case ATTRIBUTES.Perception:
+                case "Perception":
                     perception++;
                     break;
-                case ATTRIBUTES.Strength:
+                case "Strength":
                     strength++;
                     break;
             }
@@ -88,28 +90,28 @@ public class Character : MonoBehaviour {
         }
     }
 
-	// Use this for initialization
-	void Start () 
+    // Use this for initialization
+    void Start()
     {
         //spriteRenderer = this.GetComponent<SpriteRenderer>();
         //standardSprite = spriteRenderer.sprite;
         RecalcAttributes();
         animator = this.GetComponent<Animator>();
         //particleSystem = this.GetComponentInChildren<ParticleSystem>();
-       
-	}
+
+    }
 
     public void Attack(FORMS form)
     {
         //Debug.Log(spriteForm);
         //particleSystem.Play();
-   
+
         StartCoroutine(AttackIEnum(form));
         //spriteRenderer.sprite = spriteForm;
         //Debug.Log(spriteRenderer.sprite);
 
         //Debug.Log("TEST");
-        
+
 
     }
 
@@ -122,39 +124,44 @@ public class Character : MonoBehaviour {
     }
 
 
-	// Update is called once per frame
-	void Update () {
+    // Update is called once per frame
+    void Update()
+    {
 
         //if(charName == "Player") Debug.Log(spriteRenderer.sprite);
-	}
+    }
 
 
 
     public void RecalcAttributes()
     {
+        int currentDamage = healthPointsMax - healthPoints;
+
         healthPointsMax = constitution * 2 + endurance;
 
-        attack = dexterity/2+strength/4+intelligence/4;
-        
+        attack = dexterity / 2 + strength / 4 + intelligence / 4;
+
         damage = strength / 2 + dexterity / 4;
         damageMagic = intelligence / 2 + perception / 4;
 
-        defense = dexterity/2+endurance/4+perception/4;
-        block = constitution/2+endurance/2+strength/4;
-        blockFire = intelligence/2 +perception/2+constitution/4;
-        blockWater = intelligence/2 +perception/2+endurance/4;
-        blockEarth = intelligence/2 +perception/2+strength/4;
-        blockAir = intelligence/2 +perception/2+dexterity/4;
+        defense = dexterity / 2 + endurance / 4 + perception / 4;
+        block = constitution / 2 + endurance / 2 + strength / 4;
+        blockFire = intelligence / 2 + perception / 2 + constitution / 4;
+        blockWater = intelligence / 2 + perception / 2 + endurance / 4;
+        blockEarth = intelligence / 2 + perception / 2 + strength / 4;
+        blockAir = intelligence / 2 + perception / 2 + dexterity / 4;
 
-        amountAttacks = endurance/3;
+        amountAttacks = endurance / 3;
+
+        healthPoints = healthPointsMax - currentDamage;
     }
 
 
 
     public List<FORMS> createRandomAttackSequence()
-    { 
+    {
         List<FORMS> attackList = new List<FORMS>();
-        for(int i = 0;i<amountAttacks;i++)
+        for (int i = 0; i < amountAttacks; i++)
         {
             attackList.Add(availableForms[Random.Range(0, availableForms.Count)]);
         }

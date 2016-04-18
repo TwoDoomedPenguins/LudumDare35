@@ -38,6 +38,7 @@ public class Combat : MonoBehaviour
     public List<FORMS> allForms;
     public List<Sprite> allSprites;
     private Dictionary<FORMS, Sprite> formsAndSprites = new Dictionary<FORMS,Sprite>();
+    public int currentPlayerMoves;
 
     // Use this for initialization
     void Start()
@@ -89,7 +90,11 @@ public class Combat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (attackSequence.ContainsKey(ENTITY.Player))
+        { currentPlayerMoves = attackSequence[ENTITY.Player].Count; }
+        else
+        {currentPlayerMoves = 0; }
+        
     }
 
 

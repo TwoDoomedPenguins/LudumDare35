@@ -2,9 +2,9 @@
 using UnityEngine.UI;
 using System.Collections;
 
-public class TakeValue : MonoBehaviour
+public class TakeValueFromCombat : MonoBehaviour
 {
-    public Character character;
+    public Combat combat;
     public string attributeText;
     public string variableName;
 
@@ -23,7 +23,7 @@ public class TakeValue : MonoBehaviour
         //Debug.Log(character.GetType().GetField(variableName));
         //Debug.Log(character.GetType().GetField(variableName).GetValue(character));
         //Debug.Log(character.GetType().GetField(variableName).GetValue(character).ToString());
-        text.text = attributeText + character.GetType().GetField(variableName).GetValue(character).ToString();
+        text.text = attributeText + combat.GetType().GetField(variableName).GetValue(combat).ToString();
 
 	}
 }
