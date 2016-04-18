@@ -22,13 +22,9 @@ public class MainMenuButtons : MonoBehaviour {
     } // END ButtonNewGame
 
     public void ButtonTutorial()
-    { 
-        
-        /* 
-         
-         Hier muss noch ein bisschen Code eingefügt werden!!!!!!
-         
-         */
+    {
+
+        Application.LoadLevel(1);
 
     } // END ButtonTutorial
 
