@@ -53,8 +53,25 @@ public class Character : MonoBehaviour {
             switch (attribute)
             {
                 case ATTRIBUTES.Constitution:
+                    constitution++;
+                    break;
+                case ATTRIBUTES.Dexterity:
+                    dexterity++;
+                    break;
+                case ATTRIBUTES.Endurance:
+                    endurance++;
+                    break;
+                case ATTRIBUTES.Intelligence:
+                    intelligence++;
+                    break;
+                case ATTRIBUTES.Perception:
+                    perception++;
+                    break;
+                case ATTRIBUTES.Strength:
+                    strength++;
                     break;
             }
+            freeAttributes--;
             RecalcAttributes();
         }
 
