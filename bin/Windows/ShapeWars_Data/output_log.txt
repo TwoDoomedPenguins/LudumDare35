@@ -1,0 +1,51 @@
+Initialize engine version: 5.3.4f1 (fdbb5133b820)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.191 seconds
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: G:\TwoDoomedPenguins\LudumDare35\bin\Windows\ShapeWars_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 60Hz; virtual: 4240x1440 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.741808 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1308 -> priority: 1 
+  Thread -> id: 3428 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 9.690985 ms
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 226.
+Total: 0.290719 ms (FindLiveObjects: 0.049265 ms CreateObjectMapping: 0.010776 ms MarkObjects: 0.211688 ms  DeleteObjects: 0.010776 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.786199 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 217.
+Total: 0.338188 ms (FindLiveObjects: 0.039258 ms CreateObjectMapping: 0.010007 ms MarkObjects: 0.277119 ms  DeleteObjects: 0.010007 ms)
+
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.386428 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 1599.
+Total: 0.846755 ms (FindLiveObjects: 0.078517 ms CreateObjectMapping: 0.020014 ms MarkObjects: 0.737703 ms  DeleteObjects: 0.009493 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.409975 ms
+
+Unloading 367 unused Assets to reduce memory usage. Loaded Objects now: 220.
+Total: 0.619927 ms (FindLiveObjects: 0.097761 ms CreateObjectMapping: 0.019501 ms MarkObjects: 0.318687 ms  DeleteObjects: 0.181924 ms)
+

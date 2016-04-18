@@ -17,7 +17,7 @@ public class MainMenuButtons : MonoBehaviour {
     public void ButtonNewGame()
     {
 
-        Application.LoadLevel(1);
+        Application.LoadLevel(2);
 
     } // END ButtonNewGame
 
