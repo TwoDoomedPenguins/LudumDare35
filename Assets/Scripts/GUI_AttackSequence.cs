@@ -39,10 +39,9 @@ public class GUI_AttackSequence : MonoBehaviour
         {
             if (i < combat.attackSequence[entity].Count)
             {
+                attackSequence[i].SetActive(true);
                 if (entity == ENTITY.Enemy)
-                { 
-                    attackSequence[i].SetActive(true);
-
+                {
                     if (i < amountVisibleForms)
                     {
                         attackSequence[i].GetComponent<Image>().sprite = formAndSprites[combat.attackSequence[entity][i]];
@@ -54,7 +53,7 @@ public class GUI_AttackSequence : MonoBehaviour
                 }
                 else
                 {
-                    
+                    attackSequence[i].GetComponent<Image>().sprite = formAndSprites[combat.attackSequence[entity][i]];
                 }
             }
             else
