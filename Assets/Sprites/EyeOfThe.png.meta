@@ -1,11 +1,13 @@
 fileFormatVersion: 2
-guid: 28a55f25ee9abbf49a3a492afa18d3a5
-timeCreated: 1460976347
+guid: 683e1571c4e03ab4d9466b4b90eb050b
+timeCreated: 1460978553
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Apply
-    21300002: NextRoom
+    21300000: EyeOfThe_0
+    21300002: EyeOfThe_1
+    21300004: EyeOfThe_2
+    21300006: EyeOfThe_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -31,7 +33,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -52,36 +54,74 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Apply
+    - name: EyeOfThe_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 32}
-        - {x: -16, y: -32}
-        - {x: 16, y: -32}
-        - {x: 16, y: 32}
-    - name: NextRoom
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 11}
+        - {x: 11, y: 16}
+    - name: EyeOfThe_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16, y: 32}
-        - {x: -16, y: -32}
-        - {x: 16, y: -32}
-        - {x: 16, y: 32}
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 11}
+        - {x: 11, y: 16}
+    - name: EyeOfThe_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 11}
+        - {x: 11, y: 16}
+    - name: EyeOfThe_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 12, y: -16}
+        - {x: 16, y: -10}
+        - {x: 16, y: 11}
+        - {x: 11, y: 16}
     outline: []
   spritePackingTag: 
   userData: 
