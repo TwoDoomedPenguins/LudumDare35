@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 using ELEMENTS = ENUMS.ELEMENTS;
 using FORMS = ENUMS.FORMS;
+using ATTRIBUTES = ENUMS.ATTRIBUTES;
 
 public class Character : MonoBehaviour {
 
@@ -12,6 +13,7 @@ public class Character : MonoBehaviour {
 
     public int level;
     public int experience;
+    public int freeAttributes;
 
     public int healthPoints;
     public int healthPointsMax;
@@ -43,9 +45,31 @@ public class Character : MonoBehaviour {
     public ParticleSystem particleSystem;
     //SpriteRenderer spriteRenderer;
     //Sprite standardSprite;
-    
 
+    public void AddAttribute(ATTRIBUTES attribute)
+    {
+        if (freeAttributes > 0)
+        {
+            switch (attribute)
+            {
+                case ATTRIBUTES.Constitution:
+                    break;
+            }
+            RecalcAttributes();
+        }
 
+    }
+
+    public void AddExperience(int experiencePoints)
+    {
+        experience += experiencePoints;
+        if (experience >= 1000)
+        {
+            level++;
+            freeAttributes += 5;
+            experience -= 1000;
+        }
+    }
 
 	// Use this for initialization
 	void Start () 

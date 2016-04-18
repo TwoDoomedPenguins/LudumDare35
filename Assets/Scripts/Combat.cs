@@ -190,6 +190,7 @@ public class Combat : MonoBehaviour
                 {
                     WinLooseText.NewDamageText("You Win");
                     combatStatus = COMBATSTATUS.Win;
+                    playerCharacter.AddExperience(enemyCharacter.experience);
                     DestroyImmediate(enemyObject);
                     enemyObject = null;
                     enemyCharacter = null;
