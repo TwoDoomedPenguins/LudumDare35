@@ -61,7 +61,7 @@ public class Combat : MonoBehaviour
 
         if (enemyCharacter.battleMusic != null)
         {
-            Debug.Log(enemyCharacter.battleMusic.name);
+            //Debug.Log(enemyCharacter.battleMusic.name);
             audioSourceMusic.clip = enemyCharacter.battleMusic;
             audioSourceMusic.Play();
         }
@@ -122,7 +122,7 @@ public class Combat : MonoBehaviour
             for (int round = 0; round < rounds; round++)
             {
 
-                Debug.Log(round.ToString() + " of " + rounds.ToString());
+                //Debug.Log(round.ToString() + " of " + rounds.ToString());
 
                 FORMS attackForm = FORMS.NOTHING;
                 ENTITY attackEntity = ENTITY.Player;
@@ -157,14 +157,14 @@ public class Combat : MonoBehaviour
                         attackForm = enemyCharacter.availableForms[(Random.Range(0, enemyCharacter.availableForms.Count - 1))];
                     }
 
-                    if (attackEntity == ENTITY.Enemy) Debug.Log(attackForm.ToString());
+                    //if (attackEntity == ENTITY.Enemy) Debug.Log(attackForm.ToString());
 
                     if (i == 0)
                     {
                         if (attackForm != FORMS.NOTHING)
                         {
                             damageTextEnemy.NewDamageText(CalculateFight(playerCharacter, attackForm, enemyCharacter, defendForm));
-                            Debug.Log(attackForm);
+                            //Debug.Log(attackForm);
                             playerCharacter.Attack(attackForm);
                         }
                     }

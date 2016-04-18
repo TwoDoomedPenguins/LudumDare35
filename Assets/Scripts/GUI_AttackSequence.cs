@@ -29,12 +29,33 @@ public class GUI_AttackSequence : MonoBehaviour
 
     public void RefreshSequenceSprites()
     {
+        int amountVisibleForms = 0;
+        if (entity == ENTITY.Enemy)
+        {
+            amountVisibleForms = combat.playerCharacter.perception / 3;
+        }
+
         for (int i = 0; i < attackSequence.Count; i++)
         {
             if (i < combat.attackSequence[entity].Count)
             {
-                attackSequence[i].SetActive(true);
-                attackSequence[i].GetComponent<Image>().sprite = formAndSprites[combat.attackSequence[entity][i]];
+                if (entity == ENTITY.Enemy)
+                { 
+                    attackSequence[i].SetActive(true);
+
+                    if (i < amountVisibleForms)
+                    {
+                        attackSequence[i].GetComponent<Image>().sprite = formAndSprites[combat.attackSequence[entity][i]];
+                    }
+                    else
+                    {
+                        attackSequence[i].GetComponent<Image>().sprite = formAndSprites[FORMS.Unknown];
+                    }
+                }
+                else
+                {
+                    
+                }
             }
             else
             {
