@@ -58,6 +58,7 @@ public class Dungeon : MonoBehaviour
         {
             //combat.enemyCharacter = monsterList[dungeonLevel - 1].GetComponent<Character>();
             GameObject enemyObject = (GameObject)Instantiate(monsterList[dungeonLevel - 1]);
+            enemyObject.GetComponent<Character>().particleSystem = enemySpawn.GetComponent<ParticleSystem>();
             enemyObject.transform.position = enemySpawn.transform.position;
             combat.enemyObject = enemyObject;
             combat.StartNewFight();

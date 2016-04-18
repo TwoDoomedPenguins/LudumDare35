@@ -38,18 +38,53 @@ public class Character : MonoBehaviour {
     public List<FORMS> availableForms;
     public List<FORMS> predefinedAttackSequence;
     public AudioClip battleMusic;
+
+    Animator animator;
+    public ParticleSystem particleSystem;
+    //SpriteRenderer spriteRenderer;
+    //Sprite standardSprite;
     
+
+
 
 	// Use this for initialization
 	void Start () 
     {
-        
+        //spriteRenderer = this.GetComponent<SpriteRenderer>();
+        //standardSprite = spriteRenderer.sprite;
         RecalcAttributes();
+        animator = this.GetComponent<Animator>();
+        //particleSystem = this.GetComponentInChildren<ParticleSystem>();
+       
 	}
-	
+
+    public void Attack(FORMS form)
+    {
+        //Debug.Log(spriteForm);
+        //particleSystem.Play();
+   
+        StartCoroutine(AttackIEnum(form));
+        //spriteRenderer.sprite = spriteForm;
+        //Debug.Log(spriteRenderer.sprite);
+
+        //Debug.Log("TEST");
+        
+
+    }
+
+    IEnumerator AttackIEnum(FORMS form)
+    {
+        particleSystem.Play();
+        animator.SetTrigger(form.ToString());
+        yield return new WaitForSeconds(0.5f);
+        particleSystem.Play();
+    }
+
+
 	// Update is called once per frame
 	void Update () {
-	
+
+        //if(charName == "Player") Debug.Log(spriteRenderer.sprite);
 	}
 
 

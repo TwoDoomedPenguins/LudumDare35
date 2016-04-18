@@ -35,10 +35,17 @@ public class Combat : MonoBehaviour
 
     public List<AudioClip> soundsAttack;
 
+    public List<FORMS> allForms;
+    public List<Sprite> allSprites;
+    private Dictionary<FORMS, Sprite> formsAndSprites = new Dictionary<FORMS,Sprite>();
+
     // Use this for initialization
     void Start()
     {
-
+        for (int i = 0; i < allForms.Count; i++)
+        {
+            formsAndSprites.Add(allForms[i], allSprites[i]);
+        }
     }
 
     public void StartNewFight()
@@ -148,14 +155,27 @@ public class Combat : MonoBehaviour
                     if (attackEntity == ENTITY.Enemy) Debug.Log(attackForm.ToString());
 
                     if (i == 0)
-                    { if (attackForm != FORMS.NOTHING) damageTextEnemy.NewDamageText(CalculateFight(playerCharacter, attackForm, enemyCharacter, defendForm)); }
+                    {
+                        if (attackForm != FORMS.NOTHING)
+                        {
+                            damageTextEnemy.NewDamageText(CalculateFight(playerCharacter, attackForm, enemyCharacter, defendForm));
+                            Debug.Log(attackForm);
+                            playerCharacter.Attack(attackForm);
+                        }
+                    }
                     else
-                    { if (attackForm != FORMS.NOTHING) damageTextPlayer.NewDamageText(CalculateFight(enemyCharacter, attackForm, playerCharacter, defendForm)); }
+                    {
+                        if (attackForm != FORMS.NOTHING)
+                        {
+                            damageTextPlayer.NewDamageText(CalculateFight(enemyCharacter, attackForm, playerCharacter, defendForm));
+                            enemyCharacter.Attack(attackForm);
+                        }
+                    }
                 }
 
                 audioSourceEffect.clip = soundsAttack[Random.Range(0, soundsAttack.Count - 1)];
                 audioSourceEffect.Play();
-                
+
                 if (playerCharacter.healthPoints <= 0)
                 {
                     WinLooseText.NewDamageText("You Loose");
