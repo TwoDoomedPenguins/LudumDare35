@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: 16d4577e9cae3904aba1dccdf3029156
-timeCreated: 1460924690
+timeCreated: 1460979916
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Blob_Pink_0
+    21300002: Blob_Pink_1
+    21300004: Blob_Pink_2
+    21300006: Blob_Pink_3
+    21300008: Blob_Pink_4
+    21300010: Blob_Pink_5
+    21300012: Blob_Pink_6
+    21300014: Blob_Pink_7
+    21300016: Blob_Pink_8
+    21300018: Blob_Pink_9
+    21300020: Blob_Pink_10
+    21300022: Blob_Pink_11
+    21300024: Blob_Pink_12
+    21300026: Blob_Pink_13
+    21300028: Blob_Pink_14
+    21300030: Blob_Pink_15
+    21300032: Blob_Pink_16
+    21300034: Blob_Pink_17
+    21300036: Blob_Pink_18
+    21300038: Blob_Pink_19
+    21300040: Blob_Pink_20
+    21300042: Blob_Pink_21
+    21300044: Blob_Pink_22
+    21300046: Blob_Pink_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -29,27 +53,506 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 16
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
   allowsAlphaSplitting: 0
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
-  alphaIsTransparency: 0
-  textureType: -1
+  alphaIsTransparency: 1
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Blob_Pink_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 15}
+        - {x: 10, y: 16}
+        - {x: -11, y: 16}
+        - {x: -23, y: 4}
+        - {x: -23, y: -13}
+        - {x: -18, y: -27}
+        - {x: 19, y: -27}
+        - {x: 24, y: -10}
+        - {x: 24, y: -2}
+        - {x: 17, y: 10}
+    - name: Blob_Pink_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 18}
+        - {x: -23, y: 7}
+        - {x: -23, y: -13}
+        - {x: -13, y: -25}
+        - {x: 14, y: -25}
+        - {x: 24, y: -17}
+        - {x: 24, y: 6}
+        - {x: 19, y: 18}
+    - name: Blob_Pink_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -23, y: 11}
+        - {x: -23, y: -18}
+        - {x: -15, y: -23}
+        - {x: 10, y: -23}
+        - {x: 20, y: -20}
+        - {x: 24, y: -10}
+        - {x: 24, y: 5}
+        - {x: 14, y: 20}
+    - name: Blob_Pink_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 22}
+        - {x: -23, y: 9}
+        - {x: -23, y: -14}
+        - {x: -19, y: -21}
+        - {x: 19, y: -21}
+        - {x: 24, y: -14}
+        - {x: 24, y: 9}
+        - {x: 18, y: 22}
+    - name: Blob_Pink_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -23, y: 11}
+        - {x: -23, y: -18}
+        - {x: -15, y: -23}
+        - {x: 10, y: -23}
+        - {x: 20, y: -20}
+        - {x: 24, y: -10}
+        - {x: 24, y: 5}
+        - {x: 14, y: 20}
+    - name: Blob_Pink_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 18}
+        - {x: -23, y: 7}
+        - {x: -23, y: -13}
+        - {x: -13, y: -25}
+        - {x: 14, y: -25}
+        - {x: 24, y: -17}
+        - {x: 24, y: 6}
+        - {x: 19, y: 18}
+    - name: Blob_Pink_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 15}
+        - {x: 10, y: 16}
+        - {x: -11, y: 16}
+        - {x: -23, y: 4}
+        - {x: -23, y: -13}
+        - {x: -18, y: -27}
+        - {x: 19, y: -27}
+        - {x: 24, y: -10}
+        - {x: 24, y: -2}
+        - {x: 17, y: 10}
+    - name: Blob_Pink_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Pink_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
     outline: []
   spritePackingTag: 
   userData: 

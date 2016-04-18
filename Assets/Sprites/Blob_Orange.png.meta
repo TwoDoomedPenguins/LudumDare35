@@ -1,9 +1,33 @@
 fileFormatVersion: 2
 guid: c6e5250584c91b442891ba8c4e4eae1f
-timeCreated: 1460924691
+timeCreated: 1460979886
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Blob_Orange_0
+    21300002: Blob_Orange_1
+    21300004: Blob_Orange_2
+    21300006: Blob_Orange_3
+    21300008: Blob_Orange_4
+    21300010: Blob_Orange_5
+    21300012: Blob_Orange_6
+    21300014: Blob_Orange_7
+    21300016: Blob_Orange_8
+    21300018: Blob_Orange_9
+    21300020: Blob_Orange_10
+    21300022: Blob_Orange_11
+    21300024: Blob_Orange_12
+    21300026: Blob_Orange_13
+    21300028: Blob_Orange_14
+    21300030: Blob_Orange_15
+    21300032: Blob_Orange_16
+    21300034: Blob_Orange_17
+    21300036: Blob_Orange_18
+    21300038: Blob_Orange_19
+    21300040: Blob_Orange_20
+    21300042: Blob_Orange_21
+    21300044: Blob_Orange_22
+    21300046: Blob_Orange_23
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -49,7 +73,486 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Blob_Orange_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 15}
+        - {x: 10, y: 16}
+        - {x: -11, y: 16}
+        - {x: -23, y: 4}
+        - {x: -23, y: -13}
+        - {x: -18, y: -27}
+        - {x: 19, y: -27}
+        - {x: 24, y: -10}
+        - {x: 24, y: -2}
+        - {x: 17, y: 10}
+    - name: Blob_Orange_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 18}
+        - {x: -23, y: 7}
+        - {x: -23, y: -13}
+        - {x: -13, y: -25}
+        - {x: 14, y: -25}
+        - {x: 24, y: -17}
+        - {x: 24, y: 6}
+        - {x: 19, y: 18}
+    - name: Blob_Orange_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -23, y: 11}
+        - {x: -23, y: -18}
+        - {x: -15, y: -23}
+        - {x: 10, y: -23}
+        - {x: 20, y: -20}
+        - {x: 24, y: -10}
+        - {x: 24, y: 5}
+        - {x: 14, y: 20}
+    - name: Blob_Orange_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 22}
+        - {x: -23, y: 9}
+        - {x: -23, y: -14}
+        - {x: -19, y: -21}
+        - {x: 19, y: -21}
+        - {x: 24, y: -14}
+        - {x: 24, y: 9}
+        - {x: 18, y: 22}
+    - name: Blob_Orange_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 20}
+        - {x: -23, y: 11}
+        - {x: -23, y: -18}
+        - {x: -15, y: -23}
+        - {x: 10, y: -23}
+        - {x: 20, y: -20}
+        - {x: 24, y: -10}
+        - {x: 24, y: 5}
+        - {x: 14, y: 20}
+    - name: Blob_Orange_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11, y: 18}
+        - {x: -23, y: 7}
+        - {x: -23, y: -13}
+        - {x: -13, y: -25}
+        - {x: 14, y: -25}
+        - {x: 24, y: -17}
+        - {x: 24, y: 6}
+        - {x: 19, y: 18}
+    - name: Blob_Orange_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 11, y: 15}
+        - {x: 10, y: 16}
+        - {x: -11, y: 16}
+        - {x: -23, y: 4}
+        - {x: -23, y: -13}
+        - {x: -18, y: -27}
+        - {x: 19, y: -27}
+        - {x: 24, y: -10}
+        - {x: 24, y: -2}
+        - {x: 17, y: 10}
+    - name: Blob_Orange_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
+    - name: Blob_Orange_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: 16}
+        - {x: -15, y: 16}
+        - {x: -23, y: 6}
+        - {x: -23, y: -23}
+        - {x: -19, y: -27}
+        - {x: 18, y: -27}
+        - {x: 21, y: -26}
+        - {x: 24, y: -14}
+        - {x: 24, y: 11}
     outline: []
   spritePackingTag: 
   userData: 
