@@ -87,6 +87,7 @@ public class Character : MonoBehaviour
             level++;
             freeAttributes += 5;
             experience -= 1000;
+            healthPoints = healthPointsMax;
         }
     }
 
